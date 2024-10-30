@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>You are registered successfully</h1>
+    <p>Please use Microsoft Authenticator or Google Authenticator for scanning code.</p>
+    <div>
+        {% block page_content %}
+            <img src="data:image/png;base64,{{ data }}">
+        {% endblock %}
+    </div>
+    <div>
+        <p>I'm all set, take me to the <a href="{{ url_for('login') }}">Login</a> page!</p>
+    </div>
+{% endblock %}

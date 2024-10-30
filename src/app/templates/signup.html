@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+    <form method="POST">
+
+        <div class="form-field">
+            <label for="email">email</label>
+            <input id="email" type="email" placeholder="email" value="{{ email }}" name="email"
+                   required/>
+        </div>
+
+        <div class="form-field">
+            <label for="password">password</label>
+            <input id="password" type="password" placeholder="password" value="{{ password }}"
+                   name="password" required/>
+        </div>
+
+        <div class="form-field">
+            <label for="confirm_password">confirm_password</label>
+            <input id="confirm_password" type="password" placeholder="confirm_password"
+                   value="{{ confirm_password }}"
+                   name="confirm_password" required/>
+        </div>
+
+        {% for error in errors %}
+            <div class="form-errors">{{ error }}</div>
+        {% endfor %}
+
+        <div class="form-field">
+            <button class="btn" type="submit">Submit</button>
+        </div>
+    </form>
+{% endblock %}

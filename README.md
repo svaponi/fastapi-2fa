@@ -6,8 +6,8 @@ This repository uses [FastAPI](https://fastapi.tiangolo.com) for creating webapp
 
 ### Local
 ```sh
-git clone https://github.com/vinodiOS/two-factor-auth-FastAPI.git
-cd two-factor-auth-FastAPI
+git clone https://github.com/svaponi/fastapi-2fa.git
+cd fastapi-2fa
 virtualenv venv 
 source env/bin/activate 
 pip install -r requirements.txt

@@ -8,7 +8,20 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
+fastapi = "^0.115.4"
+databases = "^0.9.0"
+pyotp = "^2.9.0"
+jinja2 = "^3.1.4"
+pyqrcode = "^1.2.1"
+python-multipart = "^0.0.16"
+bcrypt = "^4.2.0"
+pypng = "^0.20220715.0"
 
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+python-dotenv = "^1.0.1"
+uvicorn = "^0.32.0"
 
 [build-system]
 requires = ["poetry-core"]

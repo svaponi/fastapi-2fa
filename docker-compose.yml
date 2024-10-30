@@ -1,7 +1,6 @@
-version: '3.7'
 services:
-  otp_example:
+  app:
     build:
       context: .
     ports:
-    - '8080:80'
+      - '8000:8000'

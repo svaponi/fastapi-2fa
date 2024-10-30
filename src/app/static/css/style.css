@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+form {
+    width: 400px;
+    padding: 1em;
+    background-color: white;
+}
+
+.form-errors {
+    text-align: center;
+    color: darkred;
+    margin: 1em;
+    padding: 1em;
+}
+
+.form-field {
+    margin: 1em;
+    padding: 1em;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 1em;
+    display: block;
+}
+
+.form-field button {
+    width: 100%;
+    padding: 1em;
+    display: block;
+}

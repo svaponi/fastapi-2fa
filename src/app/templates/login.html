@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+    <form method="POST">
+
+        <div class="form-field">
+            <label for="email">email</label>
+            <input id="email" type="email" placeholder="email" value="{{ email }}" name="email"
+                   required/>
+        </div>
+
+        <div class="form-field">
+            <label for="password">password</label>
+            <input id="password" type="password" placeholder="password" value="{{ password }}"
+                   name="password"
+                   required/>
+        </div>
+
+        <div class="form-field">
+            <label for="auth_code">auth_code</label>
+            <input id="auth_code" type="text" placeholder="auth_code" value="{{ auth_code }}"
+                   name="auth_code"
+                   required/>
+        </div>
+
+        {% for error in errors %}
+            <div class="form-errors">{{ error }}</div>
+        {% endfor %}
+
+        <div class="form-field">
+            <button class="btn" type="submit">Login</button>
+        </div>
+    </form>
+{% endblock %}
